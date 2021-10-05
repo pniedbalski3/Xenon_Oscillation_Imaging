@@ -15,6 +15,7 @@ First global oscillations in RBC k0 are calculated using the function Wiggle_Too
 As of 10/5/2021, 3 methods of calculating regional oscillations are performed:
 
 - Bin "high" and "low" regions of k0, then create two key images from RBC data. The scaled difference between these key images is then the RBC oscillation amplitude (This is the method published in JAPPL)
+
 The two additional methods that I am exploring start the same way:
 Reconstruct key images in increments of 200 ms (i.e., create a key image for every 0.2 s of data). This results in >30 key images. The mean of these images shows an oscillation. Then, voxel-by-voxel:
 - Perform a sine fitting to get amplitude and phase of oscillation (I'm not convinced that this is ideal, because the data is very noisy... can we really get an accurate phase measurement?)
