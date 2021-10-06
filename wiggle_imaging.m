@@ -15,7 +15,7 @@ purp = [168 96 168]/255;
 
 parent_path = which('wiggle_imaging');
 idcs = strfind(parent_path,filesep);%determine location of file separators
-parent_path = parent_path(1:idcs(end-1)-1);%remove file
+parent_path = parent_path(1:idcs(end)-1);%remove file
 
 %excel_summary_file = 'C:\Users\pniedbalski\OneDrive - University of Kansas Medical Center\Documents\GitHub\Xenon_Pipeline\Analysis_Pipeline\AncillaryFiles\All_Wiggle_Summary.xlsx';
 
