@@ -86,8 +86,8 @@ end
 %Difference and mean - express as a percentage of mean RBC (minima were
 %found with a -, so use + to get a difference
 %Avg_Amp = mean((maxima+minima)/mean(RBC2Gas)*100);
-Avg_Amp = (mean(maxima)+mean(minima))/mean(RBC2Gas)*100;
-Std_Amp = std((maxima+minima)/mean(RBC2Gas)*100);
+Avg_Amp = (mean(maxima)+mean(minima))/2/mean(RBC2Gas)*100;
+Std_Amp = std((maxima+minima)/2/mean(RBC2Gas)*100);
 %% Binning
 % Before, I stretched data and picked peaks that way. Retrospective gating
 % methods may work, but let's try something that may be a little more

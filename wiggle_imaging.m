@@ -105,6 +105,7 @@ end
 High_Key(1:Key_Rad,High_Indx) = dis2gasfid(1:Key_Rad,High_Indx);
 Low_Key(1:Key_Rad,Low_Indx) = dis2gasfid(1:Key_Rad,Low_Indx);
 
+%%
 %What if I just skip over the binning and keyhole based on every .200
 %seconds (i.e. 5 frames per second) - That's hardly any data in each
 %key, but it may work. This should allow us to discern up to 100 bpm heart
@@ -187,7 +188,7 @@ low_traj_r = traj_r;
 low_traj_r(low_nan,:) = [];
 dis_traj_r = traj_r;
 dis_traj_r(all_nan,:) = [];
-
+%% Reconstruct images
 %Reconstruct
 All_Dis = Wiggle_Recon.Dissolved_Phase_LowResRecon(ImSize,dis_data_r,dis_traj_r);
 High_Dis = Wiggle_Recon.Dissolved_Phase_LowResRecon(ImSize,high_data_r,high_traj_r);
